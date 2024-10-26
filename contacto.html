@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">Inicio</a>
+            <a href="articulo.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required maxlength="50">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required pattern="[0-9]{10}" maxlength="10">
+            
+            <button type="button" onclick="validateForm()">Enviar</button>
+            
+        </form>
+        
+        <div id="mensaje"></div>
+    </main>
+
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

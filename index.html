@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panaderia Artesanal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">Inicio</a>
+            <a href="articulo.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenidos a nuestra Panadería Artesanal</h1>
+        <p class= "descripcion">Disfruta de los mejores productos horneados con amor y dedicación e ingredientes de las mas alta calidad.</p>
+        <p class="descripcion">todos nuestros productos estan hecho a horno de barro</p>
+        <!-- Carrusel -->
+        <div class="carousel">
+            <button id="prev" onclick="prevImage()">⬅️</button>
+            <img id="carouselImage"  alt="Producto artesanal" style="display: block;">
+            <button id="next" onclick="nextImage()">➡️</button>
+        </div>
+    </main>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
